@@ -1,0 +1,60 @@
+.profile {
+  color: black;
+  margin: 0 auto;
+
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px,
+    rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px;
+  width: 25%;
+  padding-top: 15px;
+  margin-bottom: 50px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.avatar {
+  width: 50%;
+}
+
+.descriptionItem {
+  color: rgba(131, 119, 119, 0.896);
+  margin-bottom: 10px;
+}
+
+.name {
+  color: black;
+  font-weight: bold;
+  font-size: large;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.statsContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid black;
+  border-bottom: none;
+  border-right: none;
+  flex-basis: calc(100% / 3);
+  background-color: rgba(246, 244, 244, 0.726);
+  padding: 15px 0;
+  gap: 3px;
+}
+.statsContainer:first-child {
+  border-left: none;
+}
+
+.statsQuantity {
+  font-weight: bolder;
+}

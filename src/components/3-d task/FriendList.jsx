@@ -1,14 +1,16 @@
 import PropTypes from 'prop-types';
+import clsx from 'clsx';
+import css from './FriendList.module.css';
 
 import FriendListItem from './FriendListItem';
 
 export default function FriendList({ friends }) {
   return (
-    <ul className="friendsList">
+    <ul className={css.friendList}>
       {friends.map(item => (
-        <li className="friendsListCard" key={item.id}>
+        <li className={css.friendListItem} key={item.id}>
           <span
-            className={item.isOnline ? 'status online' : 'status offline'}
+            className={clsx(item.isOnline ? css.online : css.offline)}
           ></span>
           <FriendListItem
             avatar={item.avatar}

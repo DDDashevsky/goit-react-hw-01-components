@@ -1,0 +1,23 @@
+.stats {
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+  border: 1px solid black;
+  margin-bottom: 50px;
+}
+
+.statsList {
+  display: flex;
+  height: 50px;
+}
+
+.statsListItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-shadow: 2px 1px 1px rgba(230, 227, 227, 0.399);
+  color: rgb(1, 1, 1);
+}
