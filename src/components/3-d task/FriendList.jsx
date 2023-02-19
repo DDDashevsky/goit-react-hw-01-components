@@ -22,3 +22,7 @@ export default function FriendList({ friends }) {
     </ul>
   );
 }
+
+FriendList.propTypes = {
+  frends: PropTypes.array,
+};
