@@ -1,4 +1,6 @@
-/* .profile {
+import styled from '@emotion/styled';
+
+export const Card = styled.div`
   color: black;
   margin: 0 auto;
 
@@ -9,37 +11,33 @@
   width: 25%;
   padding-top: 15px;
   margin-bottom: 50px;
-} */
+`;
 
-/* .description {
+export const Description = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-} */
+`;
 
-/* .avatar {
+export const Avatar = styled.img`
   width: 50%;
-} */
+`;
 
-/* .descriptionItem {
-  color: rgba(131, 119, 119, 0.896);
+export const DescriptionItem = styled.p`
   margin-bottom: 10px;
-} */
+  color: ${props => (props.name ? 'black' : 'rgba(131, 119, 119, 0.896)')};
+  font-weight: ${props => props.name && 'bold'};
+  font-size: ${props => props.name && 'large'};
+`;
 
-/* .name {
-  color: black;
-  font-weight: bold;
-  font-size: large;
-} */
-
-/* .stats {
+export const Stats = styled.ul`
   display: flex;
   justify-content: space-evenly;
-} */
+`;
 
-/* .statsContainer {
+export const StatsItem = styled.li`
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -50,11 +48,14 @@
   background-color: rgba(246, 244, 244, 0.726);
   padding: 15px 0;
   gap: 3px;
-} */
-/* .statsContainer:first-child {
-  border-left: none;
-} */
 
-/* .statsQuantity {
+  :first-child {
+    border-left: none;
+  }
+`;
+
+export const StatsQuantity = styled.span`
   font-weight: bolder;
-} */
+`;
+
+export const StatsLabel = styled.span``;

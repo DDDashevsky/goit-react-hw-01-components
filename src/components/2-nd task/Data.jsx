@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import Stats from './Stats';
 import getRandomHexColor from 'randomHex';
-import css from './Data.module.css';
+import css from 'components/2-nd task/Data.module.css';
 
 export default function Data({ title, stats }) {
   return (
